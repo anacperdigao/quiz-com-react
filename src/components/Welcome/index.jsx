@@ -8,7 +8,7 @@ const Welcome = () => {
 
   // O dispatch serve para eu poder entrar no reducer e executar o switch case que eu fiz lá.
   // quizState eu pego os valores, e dispatch eu altero os valores.
-  const [quizState, dispatch] = useContext(QuizContext)
+  const [ dispatch ] = useContext(QuizContext)
 
 
   // No onClick eu vou acessar o reducer através do dispatch e vou dizer qual o case que eu quero acessar no

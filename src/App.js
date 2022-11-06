@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from "react";
 import GameOver from "./components/GameOver";
 import { GlobalStyle } from "./components/GlobalStyle";

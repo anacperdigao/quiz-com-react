@@ -10,6 +10,7 @@ const initialState = {
     questions: questions,
     currentQuestion: 0,
     score: 0,
+    answerSelected: false,
 }
 
 // O reducer utiliza dois parâmetros, primeiro o estado inicial, e depois a ação que o usuario
@@ -50,11 +51,31 @@ const quizReducer = (state, action) => {
                 currentQuestion: nextQuestion,
                 // Se meu endGame for true, eu pulo pro STAGE 'End', senão, eu permaneço no state atual
                 gameStage: endGame ? STAGES[2] : state.gameStage,
+                answerSelected: false,
             };
 
         
         case 'NEW_GAME':
             return initialState;
+
+
+        case 'CHECK_ANSWER':
+            // Aqui eu só validei para nao deixar selecionar e pontuar varias vezes
+            if (state.answerSelected) return state;
+
+            const answer = action.payload.answer;
+            const option = action.payload.option;
+            let correctAnswer = 0;
+
+            if( answer === option ) {
+                correctAnswer = 1;
+            }
+
+            return {
+                ...state,
+                score: state.score + correctAnswer,
+                answerSelected: option,
+            }
 
 
         default:
