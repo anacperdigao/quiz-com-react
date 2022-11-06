@@ -24,6 +24,7 @@ const quizReducer = (state, action) => {
                 gameStage: STAGES[1],
             };
         
+
         case 'REORDER_QUESTIONS':
             const reorderedQuestions = questions.sort(() => {
                 return Math.random() - 0.5
@@ -32,6 +33,24 @@ const quizReducer = (state, action) => {
                 ...state,
                 questions: reorderedQuestions,
             };
+
+
+        case 'CHANGE_QUESTION':
+            const nextQuestion = state.currentQuestion + 1
+            let endGame = false
+
+            // Se a questions no indice [nextQuestions] não existir...
+            if(!questions[nextQuestion]){
+                endGame = true;
+            }
+
+            return {
+                ...state,
+                currentQuestion: nextQuestion,
+                // Se meu endGame for true, eu pulo pro STAGE 'End', senão, eu permaneço no state atual
+                gameStage: endGame ? STAGES[2] : state.gameStage,
+            };
+
 
         default:
             return state;

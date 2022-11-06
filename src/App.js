@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import GameOver from "./components/GameOver";
 import { GlobalStyle } from "./components/GlobalStyle";
 import Question from "./components/Question";
 import Welcome from "./components/Welcome";
@@ -21,9 +22,12 @@ function App() {
     <div className="App">
       
       <GlobalStyle />
+      
       <h1>Quiz</h1>
+      
       {quizState.gameStage === 'Start' && <Welcome />}
       {quizState.gameStage === 'Playing' && <Question />}
+      {quizState.gameStage === 'End' && <GameOver />}
 
     </div>
   );
