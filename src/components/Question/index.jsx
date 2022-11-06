@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { QuizContext } from '../../context/quiz'
+import * as S from './styles'
 
 
 
@@ -10,14 +11,14 @@ const Question = () => {
 
   return (
 
-    <div>
-        <p>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</p>
-        <h2>{currentQuestion.question}</h2>
+    <S.QuestionsDiv>
+        <S.Paragraph>Pergunta {quizState.currentQuestion + 1} de {quizState.questions.length}</S.Paragraph>
+        <S.Subtitle>{currentQuestion.question}</S.Subtitle>
         <div>
-            <p>Opções</p>
+            <S.Paragraph>Opções</S.Paragraph>
         </div>
-        <button>Continuar</button>
-    </div>
+        <S.ButtonQuestions>Continuar</S.ButtonQuestions>
+    </S.QuestionsDiv>
   
   )
 }
