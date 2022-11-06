@@ -11,10 +11,11 @@ function App() {
 
   // Vou embaralhar as perguntas pra nao começar igual e vai ser executado apenas uma vez 
   // quando a aplicação começa, por isso só recebe um colchetes vazios como segundo componente.
-
+  // Só que eu vou fazer lá no reducer e aqui só vou acessar.
   useEffect(() => {
-
+    dispatch({type: 'REORDER_QUESTIONS'});
   }, [])
+
 
   return (
     <div className="App">
