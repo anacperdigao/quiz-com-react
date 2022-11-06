@@ -9,6 +9,7 @@ const initialState = {
     gameStage: STAGES[0],
     questions: questions,
     currentQuestion: 0,
+    score: 0,
 }
 
 // O reducer utiliza dois parâmetros, primeiro o estado inicial, e depois a ação que o usuario
@@ -50,6 +51,10 @@ const quizReducer = (state, action) => {
                 // Se meu endGame for true, eu pulo pro STAGE 'End', senão, eu permaneço no state atual
                 gameStage: endGame ? STAGES[2] : state.gameStage,
             };
+
+        
+        case 'NEW_GAME':
+            return initialState;
 
 
         default:
