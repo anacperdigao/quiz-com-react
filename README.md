@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+<h1 align="center"> Quiz App </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">:page_facing_up: Descrição do projeto </h2>
+<p>Essa aplicação é um Quiz com perguntas sobre Javascript e que o usuário no final vê o seu score e pode recomeçar se quiser.</p>
+<br>
 
-## Available Scripts
+<p>Imagem 1: Início do jogo</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/200311294-239b46a8-439f-4bf7-8abc-dabe1d33d1ec.png" width: 1000></p>
+<br>
 
-In the project directory, you can run:
+<p>Imagem 2: Perguntas do jogo</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/200311282-2016311b-25b3-40ff-b12e-b91cc12d1270.png" width: 1000></p>
+<br>
 
-### `npm start`
+<p>Imagem 3: Resposta certa</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/200311256-39acd327-c3e6-41d8-97e2-6ee7ccb66fd5.png" width: 1000></p>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>Imagem 4: Fim de jogo</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/200311243-6ee424e2-c308-4759-a0d3-35bf7b055982.png" width: 1000></p>
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<p>Vídeo 1: Desktop</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/108142878/200312535-58823b7a-f59b-4ede-a56b-35169d23c201.gif" width: 800></p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<br>
+<h2 align="center">:hourglass: Status do projeto </h2>
+<h4> :white_check_mark: Desktop - FINALIZADO :white_check_mark: </h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
+<h2 align="center">:hammer: Funcionalidades do projeto </h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ``Funcionalidade 1:`` Perguntas para responder que monstra na hora a resposta certa.
+- ``Funcionalidade 2:`` Tela final com pontuação do jogo.
+- ``Funcionalidade 3:`` Opção de recomeçar o jogo e tentar novamente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
+<h2 align="center"> :dart: Objetivo de aprendizado/O que aprendi </h2>
+<p>Nesse projeto utilizei conceitos importantíssimos em React, como por exemplo: contextAPI e o hook useReducer.</p>
+<p>Achei que os dois conceitos trabalhando juntos facilitaram demais o gerencimento de estados globais.</p>
+<p>Além disso, nesse projeto passei por uma situação que ainda não havia me deparado em Styled-components, que foi o fato de precisar dar duas ou três classes para um mesmo componente. O que é bem simples no CSS, mas que precisava de um detalhe a mais pra utilizar em Styled-components.</p>
+<br>
 
-### `npm run eject`
+<h2 align="center"> :file_folder: Acesso ao projeto </h2>
+<p> Você pode acessar o projeto final clicando aqui: https://quiz-com-react.vercel.app/</p>
+<br>
+<h2 align="center"> :computer: Tecnologias utilizadas </h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ``React``
+  - ``ContextAPI``
+  - ``useReducer``
+  - ``JSON``
+- ``Javascript``
+- ``Styled-components``
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
+<h2 align="center"> :heavy_check_mark: Pessoas desenvolvedoras do projeto </h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| <img src="https://user-images.githubusercontent.com/108142878/183316759-e46fcec3-8594-4aca-b030-66b1e07263e0.jpg" width=115><br><sub>Ana Carolina Perdigão</sub> | 
+| :---: |
