@@ -4,7 +4,7 @@ import * as S from './styles'
 
 const Options = ({option, answer, selectOption}) => {
 
-    const [ quizState ] = useContext(QuizContext)
+    const [quizState, dispatch] = useContext(QuizContext)
 
   return (
     <S.OptionsDiv className={`
